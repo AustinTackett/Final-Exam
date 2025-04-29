@@ -18,6 +18,6 @@ public class Healthbar : MonoBehaviour
     void Update()
     {
         healthSlider.value = Health  / healthSlider.maxValue;
-        hpText.text = "HP: " + Health;
+        hpText.text = "HP: " + string.Format("{0:0.0}", Health);
     }
 }
